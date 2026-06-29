@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>支援中心 — What's for dinner</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; color: #333; background: #f9fafb; padding: 2rem 1rem; }
+  .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 2.5rem 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  h1 { font-size: 1.6rem; margin-bottom: 0.3rem; color: #1a1a1a; }
+  .app-name { color: #4caf50; }
+  .subtitle { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.15rem; margin-top: 1.8rem; margin-bottom: 0.5rem; color: #222; }
+  p, li { font-size: 0.95rem; margin-bottom: 0.6rem; }
+  ul { padding-left: 1.3rem; margin-bottom: 0.8rem; }
+  .contact-card { background: #f0f7f1; padding: 1.5rem; border-radius: 10px; margin-top: 1.5rem; text-align: center; }
+  .contact-card a.email { display: inline-block; background: #4caf50; color: #fff; text-decoration: none; padding: 0.7rem 1.8rem; border-radius: 8px; font-size: 1rem; margin-top: 0.5rem; }
+  .contact-card a.email:hover { background: #43a047; }
+  .faq { background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .faq summary { font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .faq p { margin-top: 0.5rem; margin-bottom: 0; }
+  .lang-switch { text-align: right; margin-bottom: 1rem; }
+  .lang-switch a { color: #4caf50; cursor: pointer; text-decoration: underline; font-size: 0.9rem; }
+  .en { display: none; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="lang-switch">
+  <a onclick="document.querySelectorAll('.zh').forEach(e=>e.style.display='none');document.querySelectorAll('.en').forEach(e=>e.style.display='block');this.parentElement.querySelector('.to-zh').style.display='inline';this.style.display='none'" class="to-en">English</a>
+  <a onclick="document.querySelectorAll('.en').forEach(e=>e.style.display='none');document.querySelectorAll('.zh').forEach(e=>e.style.display='block');this.parentElement.querySelector('.to-en').style.display='inline';this.style.display='none'" class="to-zh" style="display:none">中文</a>
+</div>
+
+<!-- Chinese Version -->
+<div class="zh">
+<h1><span class="app-name">What's for dinner（今晚食乜）</span></h1>
+<p class="subtitle">支援中心</p>
+
+<h2>常見問題</h2>
+
+<details class="faq">
+  <summary>點樣取消訂閱？</summary>
+  <p>打開 iPhone「設定」→ 撳你嘅名（Apple ID）→「訂閱項目」→ 搵到「What's for dinner」→ 撳「取消訂閱」。取消後，訂閱會喺當前計費期結束後停止。</p>
+</details>
+
+<details class="faq">
+  <summary>點樣恢復已購買嘅訂閱？</summary>
+  <p>打開 App → 設定 → 撳「恢復 App Store 購買」。App 會自動檢查你嘅 Apple ID 並恢復有效嘅訂閱。</p>
+</details>
+
+<details class="faq">
+  <summary>AI 掃描功能唔 work？</summary>
+  <p>請確保你嘅裝置已連接網絡。AI 掃描需要網絡連接先可以分析相片。如果問題持續，請透過下方 email 聯絡我們。</p>
+</details>
+
+<details class="faq">
+  <summary>我嘅資料會唔會被上傳？</summary>
+  <p>你嘅食材、食譜等資料只儲存喺你嘅裝置上，唔會上傳到我們嘅伺服器。AI 掃描嘅相片喺分析完成後即時刪除。詳情請參閱我們嘅<a href="privacy-policy.html">私隱政策</a>。</p>
+</details>
+
+<details class="faq">
+  <summary>點樣聯絡支援團隊？</summary>
+  <p>請透過下方嘅 email 地址聯絡我們，我們會盡快回覆。</p>
+</details>
+
+<div class="contact-card">
+  <h2 style="margin-top:0">需要幫助？</h2>
+  <p>如有任何問題或建議，歡迎聯絡我們：</p>
+  <a class="email" href="mailto:BeesKneestxz@californiamail.com">📧 發送電郵</a>
+  <p style="margin-top:0.8rem;color:#888;font-size:0.85rem">BeesKneestxz@californiamail.com</p>
+</div>
+</div>
+
+<!-- English Version -->
+<div class="en">
+<h1><span class="app-name">What's for dinner</span></h1>
+<p class="subtitle">Support Centre</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<details class="faq">
+  <summary>How do I cancel my subscription?</summary>
+  <p>Open iPhone Settings → tap your name (Apple ID) → Subscriptions → find "What's for dinner" → tap Cancel Subscription. After cancellation, the subscription will remain active until the end of the current billing period.</p>
+</details>
+
+<details class="faq">
+  <summary>How do I restore a previous purchase?</summary>
+  <p>Open the App → Settings → tap "Restore App Store Purchases". The app will automatically check your Apple ID and restore any active subscriptions.</p>
+</details>
+
+<details class="faq">
+  <summary>The AI scan feature isn't working?</summary>
+  <p>Please make sure your device is connected to the internet. AI scanning requires a network connection to analyse photos. If the issue persists, please contact us via the email below.</p>
+</details>
+
+<details class="faq">
+  <summary>Is my data uploaded anywhere?</summary>
+  <p>Your ingredients, recipes, and settings are stored only on your device and are never uploaded to our servers. Photos used for AI scanning are deleted immediately after analysis. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+</details>
+
+<details class="faq">
+  <summary>How do I contact support?</summary>
+  <p>Please reach out via the email address below and we'll get back to you as soon as possible.</p>
+</details>
+
+<div class="contact-card">
+  <h2 style="margin-top:0">Need Help?</h2>
+  <p>For any questions or suggestions, feel free to reach out:</p>
+  <a class="email" href="mailto:BeesKneestxz@californiamail.com">📧 Send Email</a>
+  <p style="margin-top:0.8rem;color:#888;font-size:0.85rem">BeesKneestxz@californiamail.com</p>
+</div>
+</div>
+
+</div>
+</body>
+</html>
